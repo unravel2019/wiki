@@ -1,0 +1,33 @@
+created: 20230703080121182
+creator: TidGi User
+modified: 20230703080412096
+modifier: TidGi User
+tags: 
+title: API网关备选方案
+
+! APISIX
+
+<font color="red">APISIX 和 Kong 的架构类似，但是采用了云原生的设计，使用 ETCD 作为后台，性能上比起 Kong 有相当的优势，适合对性能要求高的云原生部署的场景。特别提一下，APISIX 支持 MQTT 协议，对于构建 IOT 应用非常友好。</font>
+
+! Gravitee
+
+<font color="red">Gravitee 是 http://Gravitee.io 开源的基于 Java 的 API 管理平台，它能对 API 的生命周期进行管理，即使是开源版本，也有很好的 UI 支持。但是因为采用了 Java 构建，性能同样是短板，适合对于 API 管理有强烈需求的场景。</font>
+
+! Tyk
+
+<font color="red">Tyk 使用 Golang 开发，后台使用 Redis，性能不错，如果你喜欢 Golang，可以考虑一下。要注意的是 Tyk 的开源协议是 MPL，是属于修改代码后不能闭源，对于商业化应用不是很友好。</font>
+
+! Nginx
+
+Nginx 基于 C 开发的高性能 API 网关，拥有众多的插件，如果你的 API 管理的需求比较简单，接受手工配置路由，Nginx 是个不错的选择。
+
+! Kong
+
+Kong 是基于 Nginx 的 API 网关，使用 OpenResty 和 Lua 扩展，后台使用 PostgreSQL，功能众多，社区的热度很高，但是性能上看比起 Nginx 有相当的损失。如果你对功能和扩展性有要求，可以考虑 Kong。
+
+! Zuul
+
+Zuul 是 Netflix 开源的基于 Java 的 API 网关组件，他并不是一款开箱即用的 API 网关，需要和你的 Java 应用一起构建，所有的功能都是通过集成其它组件的方式来使用，适合对于 Java 比较熟悉，用 Java 构建的应用的场景，缺点是性能其他的开源产品要差一些，同样的性能条件下，对于资源的要求会更多。
+
+
+
