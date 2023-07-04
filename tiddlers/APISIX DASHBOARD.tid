@@ -1,9 +1,10 @@
 created: 20230704022416454
 creator: TidGi User
-modified: 20230704081159205
+modified: 20230704084234105
 modifier: TidGi User
 tags: 
 title: APISIX DASHBOARD
+type: text/vnd.tiddlywiki
 wysiwyg: yes
 
 !!!! 使用命令行 执行成功
@@ -11,4 +12,3 @@ wysiwyg: yes
 [img[image.png]]
 
 !!!! 使用dashboard
-
