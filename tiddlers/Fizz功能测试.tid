@@ -1,21 +1,16 @@
 created: 20230703025454327
 creator: TidGi User
-modified: 20230703080111480
+modified: 20230705025524105
 modifier: TidGi User
-tags: 
+tags: API网关
 title: Fizz功能测试
+type: text/vnd.tiddlywiki
 wysiwyg: yes
 
-<<<fizz 管理端 控制面板需要商业授权, 放弃
+<<<<cite >cite >cite >cite >cite >cite >cite >cite >cite >cite >cite >cite >fizz 管理端 控制面板需要商业授权, 放弃</cite>
+ </cite>> 
+> 
+> 
+> 
+> 
 <<<
-
-! 网关管理
-
-网关实例
-	fizz自带 端口8600
-网关分组
-	Auth校验 JWT校验插件 (未配置)
-路由管理
-	新增路由
-APPID管理
-	新增调用方APPID
