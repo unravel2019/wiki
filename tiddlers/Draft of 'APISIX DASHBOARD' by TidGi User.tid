@@ -2,7 +2,7 @@ created: 20230705015115320
 creator: TidGi User
 draft.of: APISIX DASHBOARD
 draft.title: APISIX DASHBOARD
-modified: 20230705033534604
+modified: 20230705063416095
 modifier: TidGi User
 tags: API网关
 title: Draft of 'APISIX DASHBOARD' by TidGi User
@@ -45,7 +45,12 @@ wysiwyg: yes
 						1.9 etcd的高可用, 再控制面达到毫秒级别的变化通知
 						1.10 运维友好, kong的控制面板收费, gateway需要嵌入代码
 						1.11 长期发展考虑 Apisix和gateway搭配使用，流量网关使用Apisix，业务网关使用gateway，使用流量网关对公网入口流量进行转发到业务网关，再由业务网关将请求转发至各个系统。
+						gateway替换为apisix:
 						https://www.zhihu.com/question/591390184
+						nginx,kong,apisix,gateway网关比较:
+						https://blog.csdn.net/VivianStark/article/details/130670946
+						apisix3.0介绍:
+						https://cloud.tencent.com/developer/article/2242316?areaSource=102001.12&traceId=njM02U14wZqi5xcp9PCNM
 						1.12 支持openapi 3.0规范 导入导出
 						1.13 其他插件支持的若干功能, grpc、serverless、skywalking、kafka、es, 身份验证、证书卸载、日志分析和可观测性
 						xRPC 四层协议拓展框架
@@ -57,7 +62,9 @@ wysiwyg: yes
 					3、
 
 ''拆解任务:'' 1、提供所有openapi列表,按照颗粒度,3DPlaza为第一级,其次服务,模块,功能,具体接口,是否按照规范在yapi方便生成md文档
-							2、根据openapi列表配置apisix
-							3、gateway网关鉴权方式
+							2、根据openapi列表配置apisix, 上游对应nacos服务, 路由对应模块功能接口, 服务统一添加插件
+							3、3DPlaza gateway网关鉴权方式, 获取token令牌接口, 应用白名单clientID secret
+							4、授权方式, 授权范围
+							5、
 
 ''暂不考虑:'' ui,前端,实现的效果差
